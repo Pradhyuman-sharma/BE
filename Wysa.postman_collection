@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "7e94f3d1-4849-48b4-a4f5-696305de2301",
+		"name": "Wy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uniqueName\":\"xp\",\r\n    \"password\":\"somenewpass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uniqueName\":\"xp\",\r\n    \"password\":\"somenewpass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update sleep well response",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM0MzIzMjJlMTBmYWQxYTk4OWQ5NGYiLCJ1bmlxdWVOYW1lIjoieHAiLCJpYXQiOjE2OTc5MTk2NzEsImV4cCI6MTY5ODAwNjA3MX0.-Dwwyjad8hVK46MN4pBZ4FvKIgS2ds-m5FWWgWcoZa0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"updateValue\":{\r\n    \"sleepingWellChanges\" :[\"new approach\"],\r\n    \"formStep\":\"1\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sleepForm/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sleepForm",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update sleep struggle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM0MzIzMjJlMTBmYWQxYTk4OWQ5NGYiLCJ1bmlxdWVOYW1lIjoieHAiLCJpYXQiOjE2OTc5MTk2NzEsImV4cCI6MTY5ODAwNjA3MX0.-Dwwyjad8hVK46MN4pBZ4FvKIgS2ds-m5FWWgWcoZa0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"updateValue\":{ \r\n       \"strugglingInSleep\":{\r\n       \"weeks\":{\r\n        \"from\":\"0\",\r\n        \"to\":\"3\"\r\n    }}  ,\r\n    \"formStep\":\"2\"\r\n     }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sleepForm/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sleepForm",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update bedTime",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM0MzIzMjJlMTBmYWQxYTk4OWQ5NGYiLCJ1bmlxdWVOYW1lIjoieHAiLCJpYXQiOjE2OTc5MTk2NzEsImV4cCI6MTY5ODAwNjA3MX0.-Dwwyjad8hVK46MN4pBZ4FvKIgS2ds-m5FWWgWcoZa0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"updateValue\":{\r\n    \"bedTime\":\"2:20:37 AM\",\r\n    \"formStep\":\"3\"\r\n\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sleepForm/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sleepForm",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update wakeupTime",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM0MzIzMjJlMTBmYWQxYTk4OWQ5NGYiLCJ1bmlxdWVOYW1lIjoieHAiLCJpYXQiOjE2OTc5MTk2NzEsImV4cCI6MTY5ODAwNjA3MX0.-Dwwyjad8hVK46MN4pBZ4FvKIgS2ds-m5FWWgWcoZa0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"updateValue\":{\r\n    \"wakeUpTime\":\"2:20:37 AM\",\r\n    \"formStep\":\"4\"\r\n\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sleepForm/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sleepForm",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update sleep duration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM0MzIzMjJlMTBmYWQxYTk4OWQ5NGYiLCJ1bmlxdWVOYW1lIjoieHAiLCJpYXQiOjE2OTc5MTk2NzEsImV4cCI6MTY5ODAwNjA3MX0.-Dwwyjad8hVK46MN4pBZ4FvKIgS2ds-m5FWWgWcoZa0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"updateValue\":{\r\n    \"sleepDuration\":\"8\",\r\n    \"formStep\":\"5\"\r\n\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sleepForm/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sleepForm",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFormData",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM0MzIzMjJlMTBmYWQxYTk4OWQ5NGYiLCJ1bmlxdWVOYW1lIjoieHAiLCJpYXQiOjE2OTc5MTk2NzEsImV4cCI6MTY5ODAwNjA3MX0.-Dwwyjad8hVK46MN4pBZ4FvKIgS2ds-m5FWWgWcoZa0",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/sleepForm/getFormData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sleepForm",
+						"getFormData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
